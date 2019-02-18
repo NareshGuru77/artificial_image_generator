@@ -1,2 +1,5 @@
-# artificial_image_generator
-Artificial image generator
+# Usage:
+python3 main.py ./images/ ./labels/ --backgrounds_path ./backgrounds/ --image_save_path ./augmented/images/ --label_save_path ./augmented/labels/ --save_label_preview True --preview_save_path ./augmented/preview/ --save_overlay True --overlay_save_path ./augmented/overlay/ --save_obj_det_label True --obj_det_save_path ./augmented/obj_det_labels/ --save_mask True --mask_save_path ./augmented/mask/ --num_images 8
+
+# Parameters:
+description of arguments could be found in arguments.py
