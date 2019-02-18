@@ -27,7 +27,7 @@ def read_files_and_visualize(data):
     image = cv2.imread(data[0])
     label = cv2.imread(data[1], 0)
     name = data[1].split('/')[-1].split('.')[0]
-    obj_name = name.split('_')[0]
+    obj_name = name[:-4]
     label_value = sorted(np.unique(label))[0]
     obj_details = find_obj_loc_and_vals(image, label,
                                         label_value, obj_name)
